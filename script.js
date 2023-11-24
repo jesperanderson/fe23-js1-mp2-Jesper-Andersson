@@ -1,4 +1,4 @@
-let computerOptions = ["rock", "scissors", "paper"];
+let computerOptions = ["sten", "sax", "påse"];
 let playerScore = 0;
 let computerScore = 0;
 
@@ -28,19 +28,19 @@ form.addEventListener('submit', (event)=>{
 
 // STEN //
 rockBtn.addEventListener("click", () => {
-  console.log("rock");
+  console.log("sten");
   const alternativIndex = Math.round(
     Math.random() * (computerOptions.length - 1)
   );
   console.log(computerOptions[alternativIndex]);
 
-  if ("rock" == computerOptions[alternativIndex]) {
+  if ("sten" == computerOptions[alternativIndex]) {
     result.innerText = "Oavgjort!";
  
-  } else if (computerOptions[alternativIndex] == "paper") {
+  } else if (computerOptions[alternativIndex] == "påse") {
     result.innerText = 'Du valde: Sten ' + '/ Datorn valde: ' + computerOptions[alternativIndex];
     computerScore++;
-  } else if (computerOptions[alternativIndex] == "scissors") {
+  } else if (computerOptions[alternativIndex] == "sax") {
     result.innerText = 'Du valde: Sten ' + '/ Datorn valde: ' + computerOptions[alternativIndex];
     playerScore++;
   }
@@ -56,16 +56,16 @@ rockBtn.addEventListener("click", () => {
 
 // SAX //
 scissorsBtn.addEventListener("click", () => {
-  console.log("scissors");
+  console.log("sax");
   const alternativIndex = Math.floor(Math.random() * computerOptions.length);
   console.log(computerOptions[alternativIndex]);
 
-  if ("scissors" == computerOptions[alternativIndex]) {
+  if ("sax" == computerOptions[alternativIndex]) {
     result.innerText = "Oavgjort!";
-  } else if (computerOptions[alternativIndex] == "paper") {
+  } else if (computerOptions[alternativIndex] == "påse") {
     result.innerText = 'Du valde: Sax ' + '/ Datorn valde: ' + computerOptions[alternativIndex];
     playerScore++;
-  } else if (computerOptions[alternativIndex] == "rock") {
+  } else if (computerOptions[alternativIndex] == "sten") {
     result.innerText = 'Du valde: Sax ' + '/ Datorn valde: ' + computerOptions[alternativIndex];
     computerScore++;
   }
@@ -81,18 +81,18 @@ scissorsBtn.addEventListener("click", () => {
 
 // PÅSE //
 paperBtn.addEventListener("click", () => {
-  console.log("paper");
+  console.log("påse");
   const alternativIndex = Math.round(
     Math.random() * (computerOptions.length - 1)
   );
   console.log(computerOptions[alternativIndex]);
 
-  if ("paper" == computerOptions[alternativIndex]) {
+  if ("påse" == computerOptions[alternativIndex]) {
     result.innerText =  "Oavgjort!";
-  } else if (computerOptions[alternativIndex] == "rock") {
+  } else if (computerOptions[alternativIndex] == "sten") {
     result.innerText = 'Du valde: Påse ' + '/ Datorn valde: ' + computerOptions[alternativIndex];
     playerScore++;
-  } else if (computerOptions[alternativIndex] == "scissors") {
+  } else if (computerOptions[alternativIndex] == "sax") {
     result.innerText = 'Du valde: Påse ' + '/ Datorn valde: ' + computerOptions[alternativIndex];
     computerScore++;
   }
