@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Sten - Sax - Påse</title>
+</head>
+<body>
+  <h1>STEN SAX PÅSE</h1>  
+  <p class="info">
+    "Sten, sax, påse" är ett enkelt handspel eller sten-sax-påse-lek som ofta används som ett slumpmässigt beslutsfattande verktyg eller som ett snabbt och roligt tidsfördriv.
+    <br><br>Spelet spelas mellan två personer, och varje spelare väljer en av tre möjliga gester:</p>
+  
+  <div id="ytterDiv">
+    <form> <!--Fixa så att spelarens namn syns på sidan-->
+      <input type="text" placeholder="Namn" id="textInput">
+      <button>Skicka!</button>
+    </form>
+      <h2 id="name"></h2>
+      <h2>GÖR DITT VAL:</h2>
+      <div id="alternativ">
+        <button class="rock">Sten</button> 
+        <button class="scissor">Sax</button>
+        <button class="paper">Påse</button>  
+      </div>
+    
+    <h2>Resultat:</h2>
+    <p id="result"></p>
+    <h3 id="score"></h3>
+    <h2>Vinnare:</h2>
+    <p id="winner"></p>
+    <button id="reload">Omstart</button>
+  </div>
+  
+  <p class="regler"> <b>Sten slår sax: </b>Om en spelare väljer sten och den andra sax, vinner stenen.<br>
+      <b>Sax slår påse:</b> Om en spelare väljer sax och den andra väljer påse, vinner saxen.<br>
+      <b>Påse slår sten:</b> Om en spelare väljer påse och den andra sten, vinner påsen.
+      <br><br>
+      Om båda spelarna väljer samma symbol är det oavgjort och spelet kan spelas om.</p>
+
+</body>
+</html>
